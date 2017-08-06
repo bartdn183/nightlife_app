@@ -1,0 +1,6 @@
+<%= form_with(url: my_location_path) do |form| %>
+	<div class="form-group">
+	<%= text_field_tag :my_location, nil, placeholder: "My Location...", class: "form-control input-lg" %>
+	</div>
+	<%= form.submit "SET LOCATION", class: "btn btn-primary btn-block btn-lg" %>
+<% end %>
